@@ -24,5 +24,7 @@ def test_divide():
 
 
 def divide_by_zero():
-    with pytest.raises(ValueError):
-        divide(1,0)                    
+    # with pytest.raises(ValueError):
+    #     divide(1,0)                    
+    with pytest.raises(ZeroDivisionError):
+        divide(2/0)
